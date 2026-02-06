@@ -83,8 +83,6 @@ P(x) = 1 / (1 + e^-z)
 
 ## Spam Detection Example
 
-![Spam Detection](logistic_regression_spam.png)
-
 Let's say we're building a spam filter using logistic regression. The algorithm would:
 
 1. **Analyze various email features**:
