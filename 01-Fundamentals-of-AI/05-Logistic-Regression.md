@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Logistic Regression Classification](logistic_regression_classification.png)
+![Logistic Regression Classification](images/logistic_regression_classification.png)
 *Scatter plot with logistic regression classification, showing data points and decision boundary with color-coded regions*
 
 Despite its name, **logistic regression** is a supervised learning algorithm primarily used for **classification**, not regression. It predicts a categorical target variable with two possible outcomes (binary classification). These outcomes are typically represented as binary values (e.g., 0 or 1, true or false, yes or no).
@@ -44,7 +44,7 @@ It achieves this by employing a **sigmoid function**, which maps any input value
 
 ## What is a Sigmoid Function?
 
-![Sigmoid Function](sigmoid.png)
+![Sigmoid Function](images/sigmoid.png)
 *Graph of sigmoid function showing an S-shaped curve with input (x) on the horizontal axis and output (y) on the vertical axis*
 
 The **sigmoid function** is a mathematical function that takes any input value (ranging from negative to positive infinity) and maps it to an output value between 0 and 1. This makes it particularly useful for modeling probabilities.
@@ -98,7 +98,7 @@ Let's say we're building a spam filter using logistic regression. The algorithm 
 
 ## Decision Boundary
 
-![Decision Boundary](logistic_regression_classification.png)
+![Decision Boundary](images/logistic_regression_classification.png)
 *Scatter plot with logistic regression decision boundary, showing data points classified as Class 0 and Class 1*
 
 A crucial aspect of logistic regression is the **decision boundary**.
@@ -115,7 +115,7 @@ In higher dimensions with more features, this separator becomes a **hyperplane**
 
 ## Understanding Hyperplanes
 
-![Hyperplane Decision Boundary](hyperplane.png)
+![Hyperplane Decision Boundary](images/hyperplane.png)
 *Scatter plot with hyperplane dividing Class 1 and Class 2 data points*
 
 In the context of machine learning, a **hyperplane** is a subspace whose dimension is one less than that of the ambient space. It's a way to visualize a decision boundary in higher dimensions.

@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Decision Tree Classifier](decision_tree.png)
+![Decision Tree Classifier](images/decision_tree.png)
 *Decision tree classifier diagram with nodes for petal length and width, classifying samples into setosa, versicolor, and virginica*
 
 **Decision trees** are a popular supervised learning algorithm for classification and regression tasks. They are known for their intuitive tree-like structure, which makes them easy to understand and interpret. In essence, a decision tree creates a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
@@ -201,7 +201,7 @@ All data points in a node belong to the same class, indicating that further spli
 
 ## Playing Tennis Example
 
-![Playing Tennis Decision Tree](decision_tree_tennis.png)
+![Playing Tennis Decision Tree](images/decision_tree_tennis.png)
 *Decision tree diagram with nodes for Outlook, Temperature, Humidity, and Wind, classifying samples into Yes or No*
 
 Let's examine the "Playing Tennis" example more closely to illustrate how a decision tree works in practice.

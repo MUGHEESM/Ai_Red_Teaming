@@ -2,7 +2,7 @@
 
 ## Overview
 
-![K-Means Clustering](k_means_clustering.png)
+![K-Means Clustering](images/k_means_clustering.png)
 *Scatter plot showing customer segmentation with K-Means clustering, featuring colored clusters and centroids*
 
 **K-means clustering** is a popular unsupervised learning algorithm for partitioning a dataset into **K distinct, non-overlapping clusters**. The goal is to group similar data points, where similarity is typically measured by the distance between data points in a multi-dimensional space.
@@ -127,7 +127,7 @@ Determining the **optimal number of clusters (K)** is crucial in K-means cluster
 
 ## Elbow Method
 
-![Elbow Method](k_means_elbow.png)
+![Elbow Method](images/k_means_elbow.png)
 *Line graph showing the Elbow Method for Optimal K with WCSS decreasing sharply at K=3*
 
 The **Elbow Method** is a graphical technique that helps estimate the optimal K by visualizing the relationship between the number of clusters and the **within-cluster sum of squares (WCSS)**.
@@ -171,7 +171,7 @@ The elbow point represents a **trade-off between model complexity and model fit*
 
 ## Silhouette Analysis
 
-![Silhouette Analysis](silhouette_analysis.png)
+![Silhouette Analysis](images/silhouette_analysis.png)
 *Silhouette plot and clustered data visualization for KMeans with 4 clusters, showing silhouette scores and cluster distribution*
 
 **Silhouette analysis** provides a more quantitative approach to evaluating different values of K. It measures how similar a data point is to its own cluster compared to other clusters.

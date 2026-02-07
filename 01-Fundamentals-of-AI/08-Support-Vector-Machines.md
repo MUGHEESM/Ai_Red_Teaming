@@ -2,7 +2,7 @@
 
 ## Overview
 
-![SVM Decision Boundary](svm.png)
+![SVM Decision Boundary](images/svm.png)
 *Scatter plot showing SVM decision boundary with classes, support vectors, and margins*
 
 **Support Vector Machines (SVMs)** are powerful supervised learning algorithms for classification and regression tasks. They are particularly effective in handling high-dimensional data and complex non-linear relationships between features and the target variable.
@@ -44,7 +44,7 @@ Imagine you're tasked with classifying emails as spam or not spam based on the f
 
 We can visualize how SVMs work.
 
-![Optimal Hyperplane](svm_optimal_hyperplane.png)
+![Optimal Hyperplane](images/svm_optimal_hyperplane.png)
 *Scatter plot showing optimal hyperplane separating data points with margins*
 
 ### Key Concepts
@@ -94,7 +94,7 @@ The SVM algorithm learns the optimal values for **w** and **b** during the train
 
 ## Non-Linear SVM
 
-![Non-Linear SVM](svm_non_linear.png)
+![Non-Linear SVM](images/svm_non_linear.png)
 *Scatter plot with non-linear SVM decision boundary, showing classes, support vectors, and margins*
 
 In many real-world scenarios, data is **not linearly separable**. This means we cannot draw a straight line or hyperplane to perfectly separate the different classes. In these cases, **non-linear SVMs** come to the rescue.

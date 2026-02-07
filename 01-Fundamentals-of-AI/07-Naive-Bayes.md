@@ -2,7 +2,7 @@
 
 ## Overview
 
-![Naive Bayes Classification](naive_bayes_classification.png)
+![Naive Bayes Classification](images/naive_bayes_classification.png)
 *Scatter plot showing Naive Bayes classification with training data in green and test data in red, separated by a decision boundary*
 
 **Naive Bayes** is a probabilistic algorithm used for classification tasks. It's based on **Bayes' theorem**, a fundamental concept in probability theory that describes the probability of an event based on prior knowledge and observed evidence.
