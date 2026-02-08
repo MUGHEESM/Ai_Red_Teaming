@@ -6,7 +6,9 @@
 
 ## 📚 Course Overview
 
-This repository contains comprehensive study materials for the **HackTheBox AI Red Teaming** course. The course covers the full spectrum of AI security, from fundamental concepts to advanced attack and defense techniques.
+This repository contains comprehensive study materials for the **HackTheBox AI Red Teaming Path** - a hands-on certification path covering the full spectrum of AI security, from fundamental concepts to advanced attack and defense techniques.
+
+**Certification Exam:** Expected April 2026
 
 ## 🎯 Learning Path
 
@@ -190,9 +192,10 @@ By completing this course, you will:
 
 - Each module contains detailed markdown files with comprehensive explanations
 - Images and diagrams are included for visual learning
-- Code examples are provided where applicable
-- This is a theoretical course focused on concepts and principles
-- Practical labs and assessments may be added in the future
+- Hands-on labs and practical exercises throughout the modules
+- This is a hands-on AI Red Teamer certification path
+- Skills assessments included to test practical knowledge
+- Part of HTB's professional certification program
 
 ## 🤝 Contributing
 
