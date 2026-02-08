@@ -12,10 +12,10 @@ This repository contains comprehensive study materials for the **HackTheBox AI R
 
 The course is structured into **12 progressive modules**, each focusing on specific aspects of AI security:
 
-### Module 01: Fundamentals of AI ✅ (In Progress)
+### Module 01: Fundamentals of AI ✅ (Complete)
 - **Duration:** 8 hours
 - **Difficulty:** Medium
-- **Status:** 20% Complete (5/25 topics)
+- **Status:** 100% Complete (25/25 topics)
 - **Topics Covered:**
   - Introduction to Machine Learning
   - Mathematics Refresher for AI
@@ -33,7 +33,10 @@ The course is structured into **12 progressive modules**, each focusing on speci
   - Q-Learning & SARSA
   - Deep Learning Foundations
   - Neural Networks & CNNs
+  - Recurrent Neural Networks
   - Generative AI & LLMs
+  - Diffusion Models
+  - Skills Assessment
 
 ### Module 02: Applications of AI in InfoSec
 - **Topics:** 26
@@ -141,7 +144,7 @@ Before starting this course, you should have:
 
 | Module | Topics | Completed | Status |
 |--------|--------|-----------|--------|
-| 01 - Fundamentals of AI | 25 | 5 | 🟡 In Progress |
+| 01 - Fundamentals of AI | 25 | 25 | 🟢 Complete |
 | 02 - Applications in InfoSec | 26 | 0 | ⚪ Not Started |
 | 03 - Red Teaming AI | 12 | 0 | ⚪ Not Started |
 | 04 - Prompt Injection | 13 | 0 | ⚪ Not Started |
@@ -153,7 +156,7 @@ Before starting this course, you should have:
 | 10 - Sparsity Attacks | 29 | 0 | ⚪ Not Started |
 | 11 - AI Privacy | 22 | 0 | ⚪ Not Started |
 | 12 - AI Defense | 22 | 0 | ⚪ Not Started |
-| **Total** | **242** | **5** | **2%** |
+| **Total** | **242** | **25** | **10%** |
 
 ## 🎓 Learning Objectives
 
@@ -197,6 +200,6 @@ This course is for educational purposes only. Always obtain proper authorization
 
 ---
 
-**Last Updated:** February 7, 2026  
+**Last Updated:** February 8, 2026  
 **Repository Status:** Active Development  
-**Current Focus:** Module 01 - Fundamentals of AI
+**Current Focus:** Module 02 - Applications of AI in InfoSec
