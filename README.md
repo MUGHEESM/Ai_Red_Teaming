@@ -38,9 +38,20 @@ The course is structured into **12 progressive modules**, each focusing on speci
   - Diffusion Models
   - Skills Assessment
 
-### Module 02: Applications of AI in InfoSec
-- **Topics:** 26
-- **Status:** Structure Created
+### Module 02: Applications of AI in InfoSec 🟡 (In Progress)
+- **Duration:** 8 hours
+- **Difficulty:** Medium
+- **Status:** 35% Complete (9/26 topics)
+- **Topics Covered:**
+  - Module Overview
+  - Introduction
+  - Environment Setup
+  - JupyterLab
+  - Python Libraries for AI
+  - Datasets
+  - Data Preprocessing
+  - Data Transformation
+  - Metrics for Evaluating a Model
 
 ### Module 03: Introduction to Red Teaming AI
 - **Topics:** 12
@@ -145,7 +156,7 @@ Before starting this course, you should have:
 | Module | Topics | Completed | Status |
 |--------|--------|-----------|--------|
 | 01 - Fundamentals of AI | 25 | 25 | 🟢 Complete |
-| 02 - Applications in InfoSec | 26 | 0 | ⚪ Not Started |
+| 02 - Applications in InfoSec | 26 | 9 | 🟡 In Progress |
 | 03 - Red Teaming AI | 12 | 0 | ⚪ Not Started |
 | 04 - Prompt Injection | 13 | 0 | ⚪ Not Started |
 | 05 - LLM Output Attacks | 15 | 0 | ⚪ Not Started |
@@ -156,7 +167,7 @@ Before starting this course, you should have:
 | 10 - Sparsity Attacks | 29 | 0 | ⚪ Not Started |
 | 11 - AI Privacy | 22 | 0 | ⚪ Not Started |
 | 12 - AI Defense | 22 | 0 | ⚪ Not Started |
-| **Total** | **242** | **25** | **10%** |
+| **Total** | **242** | **34** | **14%** |
 
 ## 🎓 Learning Objectives
 
