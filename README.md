@@ -120,6 +120,14 @@ The course is structured into **12 progressive modules**, each focusing on speci
 HTB_Ai_Red_Teaming/
 ├── 01-Fundamentals-of-AI/           # Core AI/ML concepts
 ├── 02-Applications-of-AI-in-InfoSec/
+│   ├── labs/                        # Jupyter notebooks for hands-on learning
+│   │   ├── spam-detection/
+│   │   ├── network-anomaly-detection/
+│   │   ├── malware-classification/
+│   │   └── skills-assessment/
+│   ├── models/                      # Trained models
+│   ├── datasets/                    # Training/test datasets
+│   └── images/                      # Flags and visualizations
 ├── 03-Introduction-to-Red-Teaming-AI/
 ├── 04-Prompt-Injection-Attacks/
 ├── 05-LLM-Output-Attacks/
@@ -130,8 +138,8 @@ HTB_Ai_Red_Teaming/
 ├── 10-AI-Evasion-Sparsity-Attacks/
 ├── 11-AI-Privacy/
 ├── 12-AI-Defense/
-├── labs/                            # Hands-on lab exercises
-├── payloads/                        # Attack payloads and tools
+├── labs/                            # Additional hands-on lab exercises
+├── datasets/                        # Shared datasets
 └── README.md
 ```
 
