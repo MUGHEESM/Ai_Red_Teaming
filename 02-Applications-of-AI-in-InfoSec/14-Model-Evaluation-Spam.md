@@ -25,34 +25,3 @@ print(json.dumps(response.json(), indent=4))
 
 If you are working from your own machine, ensure you have configured the HTB VPN to connect to the remote VM and spawned it. After connecting, access the model upload portal by navigating to http://<VM-IP>:8000/ in your browser and then uploading your model.
 
-## VPN Servers
-
-**Warning:** Each time you "Switch", your connection keys are regenerated and you must re-download your VPN connection file.
-
-All VM instances associated with the old VPN Server will be terminated when switching to a new VPN server.
-Existing PwnBox instances will automatically switch to the new VPN server.
-
-## PROTOCOL
-
-- UDP 1337
-- TCP 443
-
-## Connect to Pwnbox
-
-Your own web-based Parrot Linux instance to play our labs.
-
-**Pwnbox Location:** UK (87ms)
-
-Terminate Pwnbox to switch location / 1 spawns left
-
-Waiting to start...
-
-Enable step-by-step solutions for all questions
-
-## Questions
-
-**Answer the question(s) below to complete this Section and earn cubes!**
-
-**Target(s):** Click here to spawn the target system!
-
-**+ 2** What is the flag you get from submitting a good model for evaluation?
