@@ -61,7 +61,7 @@ For more details on the effectiveness of model theft attacks on a specific type 
 
 Supply chain attacks on ML-based systems target the complex, interconnected ecosystem involved in creating, deploying, and maintaining ML models. These attacks exploit vulnerabilities in any part of the ML pipeline, such as third-party data sources, libraries, or pre-trained models, to compromise the model's integrity, security, or performance. The supply chain of ML-based systems consists of more components than traditional IT systems, due to their reliance on large amounts of data. Details of supply chain attacks, including their impact, depend highly on the specific vulnerability exploited. For instance, they can result in manipulated models that perform differently than intended. The risk of supply chain attacks has grown as ML systems increasingly rely on open-source tools, publicly available data sets, and pre-trained models from external sources.
 
-For more general information about supply chain attacks, check out the Supply Chain Attacks module.
+For more general information about supply chain attacks, check out the [Supply Chain Attacks module](https://academy.hackthebox.com/module/details/243).
 
 ## Transfer Learning Attack (ML07)
 
