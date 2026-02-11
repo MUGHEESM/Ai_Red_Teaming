@@ -9,7 +9,6 @@
 | **Difficulty** | Medium |
 | **Category** | General |
 | **Duration** | 8 hours |
-| **Created By** | PandaSt0rm |
 
 ---
 

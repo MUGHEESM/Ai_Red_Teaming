@@ -9,9 +9,6 @@
 
 This module is a practical introduction to building AI models that can be applied to various infosec domains. It covers setting up a controlled AI environment using Miniconda for package management and JupyterLab for interactive experimentation. Students will learn to handle datasets, preprocess and transform data, and implement structured workflows for tasks such as spam classification, network anomaly detection, and malware classification. Throughout the module, learners will explore essential Python libraries like Scikit-learn and PyTorch, understand effective approaches to dataset processing, and become familiar with common evaluation metrics, enabling them to navigate the entire lifecycle of AI model development and experimentation.
 
-**Created by:** PandaSt0rm  
-**Co-Authors:** vautia
-
 ## Module Summary
 
 Cybersecurity professionals rely on a well-structured AI environment and streamlined workflows to efficiently process data, build models, and extract insights. This module provides a direct path to establishing and optimizing such an environment — from installing and managing packages with Miniconda, to leveraging JupyterLab for interactive development and using libraries like Scikit-learn and PyTorch for model training and evaluation — ensuring students can move seamlessly from raw data to actionable models.
