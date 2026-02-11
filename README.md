@@ -74,9 +74,11 @@ The course is structured into **12 progressive modules**, each focusing on speci
 
 ### Module 03: Introduction to Red Teaming AI 🟡 (In Progress)
 - **Topics:** 12
-- **Status:** 8% Complete (1/12 topics)
+- **Status:** 25% Complete (3/12 topics)
 - **Topics Covered:**
+  - Module Overview
   - Introduction to Red Teaming ML-based Systems
+  - Attacking ML-based Systems (ML OWASP Top 10)
 
 ### Module 04: Prompt Injection Attacks
 - **Topics:** 13
@@ -129,6 +131,8 @@ HTB_Ai_Red_Teaming/
 │   ├── datasets/                    # Training/test datasets
 │   └── images/                      # Flags and visualizations
 ├── 03-Introduction-to-Red-Teaming-AI/
+│   ├── Research_Papers_reading/     # Academic papers (ML01-ML10)
+│   └── images/                      # Attack diagrams and visualizations
 ├── 04-Prompt-Injection-Attacks/
 ├── 05-LLM-Output-Attacks/
 ├── 06-AI-Data-Attacks/
@@ -186,7 +190,7 @@ Before starting this course, you should have:
 |--------|--------|-----------|--------|
 | 01 - Fundamentals of AI | 25 | 25 | 🟢 Complete |
 | 02 - Applications in InfoSec | 26 | 26 | 🟢 Complete |
-| 03 - Red Teaming AI | 12 | 1 | 🟡 In Progress |
+| 03 - Red Teaming AI | 12 | 3 | 🟡 In Progress |
 | 04 - Prompt Injection | 13 | 0 | ⚪ Not Started |
 | 05 - LLM Output Attacks | 15 | 0 | ⚪ Not Started |
 | 06 - AI Data Attacks | 26 | 0 | ⚪ Not Started |
@@ -196,7 +200,7 @@ Before starting this course, you should have:
 | 10 - Sparsity Attacks | 29 | 0 | ⚪ Not Started |
 | 11 - AI Privacy | 22 | 0 | ⚪ Not Started |
 | 12 - AI Defense | 22 | 0 | ⚪ Not Started |
-| **Total** | **242** | **52** | **21%** |
+| **Total** | **242** | **54** | **22%** |
 
 ## 🎓 Learning Objectives
 
