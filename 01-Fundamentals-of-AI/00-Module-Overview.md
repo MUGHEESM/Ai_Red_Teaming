@@ -1,17 +1,5 @@
 # Fundamentals of AI - Module Overview
 
-## Module Details
-
-| Property | Value |
-|----------|-------|
-| **Module Name** | Fundamentals of AI |
-| **Tier** | 0 |
-| **Difficulty** | Medium |
-| **Category** | General |
-| **Duration** | 8 hours |
-
----
-
 ## Description
 
 This module provides a comprehensive guide to the theoretical foundations of Artificial Intelligence (AI). It covers various learning paradigms, including supervised, unsupervised, and reinforcement learning, providing a solid understanding of key algorithms and concepts.

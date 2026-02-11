@@ -1,12 +1,5 @@
 # Applications of AI in InfoSec
 
-## Module Details
-
-**Tier:** 0  
-**Difficulty:** Medium  
-**Category:** General  
-**Duration:** 8 hours
-
 This module is a practical introduction to building AI models that can be applied to various infosec domains. It covers setting up a controlled AI environment using Miniconda for package management and JupyterLab for interactive experimentation. Students will learn to handle datasets, preprocess and transform data, and implement structured workflows for tasks such as spam classification, network anomaly detection, and malware classification. Throughout the module, learners will explore essential Python libraries like Scikit-learn and PyTorch, understand effective approaches to dataset processing, and become familiar with common evaluation metrics, enabling them to navigate the entire lifecycle of AI model development and experimentation.
 
 ## Module Summary
