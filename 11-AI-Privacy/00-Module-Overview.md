@@ -1,15 +1,5 @@
 # Module Overview: AI Privacy
 
-## Module Details
-
-**Category:** Defensive  
-**Last Updated:** 5 months ago  
-**Module Progress:** 4.76% completed  
-**Sections:** 21 sections  
-**Interactive Exercises:** 3  
-**Assessments:** 0  
-**Badge of Completion:** 20 Cubes
-
 ## Module Description
 
 This module explores privacy attacks against machine learning models and the differential privacy defenses that protect models from such attacks.
@@ -48,10 +38,6 @@ A firm grasp of the following modules is recommended before starting:
 
 Pwnbox will not be a good experience for this module. It is HIGHLY recommended to use your own PC/Laptop for the practicals.
 
-## Creators
-
-- PandaSt0rm
-
 ## Sections
 
 1. Introduction
@@ -60,7 +46,4 @@ Pwnbox will not be a good experience for this module. It is HIGHLY recommended t
 4. Private Aggregation of Teacher Ensembles
 5. Skills Assessment
 
-## Module Progress
-
-4.76% completed
 
