@@ -234,6 +234,8 @@ The history dictionary captures per-epoch metrics: training loss, validation los
 
 Now we quantify the overfitting gap:
 
+![Training curves figure](Images/335_Introduction_target_training.png)
+
 ```python
 train_acc, _, _ = evaluate_model(target_model, train_loader, DEVICE)
 test_acc, _, _ = evaluate_model(target_model, test_loader, DEVICE)
@@ -270,14 +272,9 @@ Target Model Performance:
 
 This 5.5% gap means the model correctly classifies 90% of training samples but only 85% of unseen samples. The model behaves differently on data it has seen versus data it has not. This behavioral difference, consistent across tens of thousands of samples, provides the statistical foundation for membership inference.
 
+![Overfitting gap bar chart](Images/335_Introduction_overfitting_gap.png)
+
 The next sections use these components to implement the attack: training shadow models to generate labeled membership data, building an attack classifier that learns membership patterns, and executing the attack against the target model.
-
-## Images
-Please place the following images in `11-AI-Privacy/Images/` as referenced:
-- `335_Introduction_target_training.png` — training curves figure
-- `335_Introduction_overfitting_gap.png` — overfitting gap bar chart
-
----
 
 If you want, I can run the setup and a demo training run now. I can:
 
