@@ -258,9 +258,17 @@ Target Model Performance:
 
 This 5.5% gap means the model correctly classifies 90% of training samples but only 85% of unseen samples. The model behaves differently on data it has seen versus data it has not. This behavioral difference, consistent across tens of thousands of samples, provides the statistical foundation for membership inference.
 
+Let's examine how this gap develops over time:
+
 ![Training curves figure](Images/335_Introduction_target_training.png)
 
+Notice the divergence around epoch 20: training loss continues decreasing while validation loss starts climbing. Training accuracy reaches 90% while validation accuracy stagnates near 83%. This classic overfitting pattern shows the model memorizing training examples instead of learning generalizable patterns.
+
 ![Overfitting gap bar chart](Images/335_Introduction_overfitting_gap.png)
+
+We can quantify this gap directly: 90.2% accuracy on training data (members) versus 83.2% on test data (non-members). This 7.1% difference represents the vulnerability our attack will exploit. The model treats members and non-members measurably differently.
+
+The next sections use these components to implement the attack: training shadow models to generate labeled membership data, building an attack classifier that learns membership patterns, and executing the attack against the target model.
 
 ## Model Architectures
 We use the `MLP` class from `htb_ai_library` for both target and shadow models. The key method for our attack is `predict_proba()`:
@@ -273,25 +281,5 @@ def predict_proba(self, x):
 
 This returns calibrated probabilities, not raw logits. The attack analyzes these confidence values because members tend to receive higher-confidence predictions. A member might get `[0.05, 0.95]` while a non-member with identical features gets `[0.15, 0.85]`. This confidence gap is the signal our attack exploits.
 
-## The Overfitting Gap
-When training the target model, you will see output like:
-
-```text
-Target Model Performance:
-  Training Accuracy: 0.9012
-  Test Accuracy:     0.8456
-  Overfitting Gap:   0.0556
-```
-
-This 5.5% gap means the model correctly classifies 90% of training samples but only 85% of unseen samples. The model behaves differently on data it has seen versus data it has not. This behavioral difference, consistent across tens of thousands of samples, provides the statistical foundation for membership inference.
-
-The next sections use these components to implement the attack: training shadow models to generate labeled membership data, building an attack classifier that learns membership patterns, and executing the attack against the target model.
-
-If you want, I can run the setup and a demo training run now. I can:
-
-- Run a quick demo (reduced epochs, e.g. 5–10) to validate the pipeline and generate the example figures.
-- Run the full experiment (100 epochs target + shadow models) — this will take substantially longer and may require GPU.
-
-Tell me which you prefer and I will proceed to install dependencies and run the chosen experiment locally in the workspace.
-# Setup Overview
+The AttackModel class takes a different input structure: prediction probabilities concatenated with one-hot encoded true labels. This design lets the attack model learn class-specific confidence patterns. We cover the exact feature format when we prepare attack training data in the shadow model training section.
 
