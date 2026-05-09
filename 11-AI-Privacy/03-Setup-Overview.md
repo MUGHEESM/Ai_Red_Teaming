@@ -258,11 +258,7 @@ Target Model Performance:
 
 This 5.5% gap means the model correctly classifies 90% of training samples but only 85% of unseen samples. The model behaves differently on data it has seen versus data it has not. This behavioral difference, consistent across tens of thousands of samples, provides the statistical foundation for membership inference.
 
-Let's examine how this gap develops over time:
-
 ![Training curves figure](Images/335_Introduction_target_training.png)
-
-Notice the divergence around epoch 20: training loss continues decreasing while validation loss starts climbing. Training accuracy reaches 90% while validation accuracy stagnates near 83%. This classic overfitting pattern shows the model memorizing training examples instead of learning generalizable patterns.
 
 ![Overfitting gap bar chart](Images/335_Introduction_overfitting_gap.png)
 
