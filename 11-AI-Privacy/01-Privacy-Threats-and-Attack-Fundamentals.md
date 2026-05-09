@@ -1,12 +1,15 @@
-Section 1 / 21
+# Section 1 / 21
 
-Privacy Threats and Attack Fundamentals
+# Privacy Threats and Attack Fundamentals
+
 Machine learning models are supposed to learn patterns, not memorize individuals. Yet every model trained on personal data carries a hidden risk: it can reveal which specific individuals were in its training set. This privacy violation, known as membership inference, represents one of the core threats to ML systems deployed on sensitive data.
 
-What is a Membership Inference Attack?
+## What is a Membership Inference Attack?
+
 A Membership Inference Attack (MIA) targets a straightforward question: was a specific data point used to train a given model? We provide a sample and receive a binary answer (member or non-member) based on how the model responds to that sample. Despite its simplicity, this binary classification has serious privacy implications because membership itself can reveal sensitive information.
 
-Privacy Attacks on Machine Learning
+## Privacy Attacks on Machine Learning
+
 MIA belongs to a broader family of privacy attacks targeting ML systems, each extracting different types of information.
 
 Model inversion attacks attempt to reconstruct training data features from model outputs. Given a model that predicts disease risk from genetic markers, an attacker might infer genetic information about training subjects. A related threat comes from attribute inference attacks, where we deduce sensitive attributes not directly predicted by the model. If a model predicts income and was trained on complete records, querying it strategically might reveal education levels or employment status of training members. The most direct form of leakage occurs in training data extraction attacks, where we recover verbatim training examples from models. Large language models that memorize specific sequences are particularly vulnerable to this approach.
@@ -17,7 +20,8 @@ Consider a medical diagnosis model trained on patient records. An attacker with 
 
 This module establishes the baseline vulnerability of ML models to membership inference before we introduce any defenses. We implement the core attack methodology from Shokri et al.'s 2017 paper, which demonstrated that standard neural networks leak substantial membership information through their prediction behavior.
 
-Why Membership Inference Works
+## Why Membership Inference Works
+
 Membership inference exploits the distinction between memorization and generalization. When we train a model, we want it to learn general patterns that apply to new data. In practice, models also memorize specific training examples, particularly those that are unusual, repeated, or near decision boundaries. This memorization creates detectable behavioral differences between how models treat data they have seen versus data they have not.
 
 Consider what happens during gradient descent. We adjust model weights to reduce loss on training samples. After many iterations, we fit training data very closely, sometimes perfectly classifying every training example. But this tight fit does not transfer to new data. We have learned idiosyncrasies of specific training samples instead of underlying patterns. This phenomenon, commonly called overfitting, is the root cause of membership leakage.
@@ -30,7 +34,8 @@ Model capacity also matters. Larger models with more parameters can memorize mor
 
 Our goal as attackers is to learn a binary classifier that exploits this memorization gap. Given a specific sample and its true label, we determine whether that sample was in the target model's training set. A successful attack correctly identifies training members with accuracy significantly better than random guessing (50%).
 
-Industry Security Frameworks
+## Industry Security Frameworks
+
 Three frameworks catalogue ML privacy risks. The OWASP ML Security Top 10 (draft v0.3) lists membership inference as ML04:2023, alongside model inversion (ML03:2023) and model theft (ML05:2023). It assigns membership inference moderate exploitability (4/5) and moderate impact (4/5), recommending differential privacy and regularization as primary defenses.
 
 The OWASP Top 10 for LLM Applications (2025) addresses generative AI with LLM02: Sensitive Information Disclosure covering training data leakage, and LLM04: Data and Model Poisoning addressing the memorization patterns that enable inference attacks.
