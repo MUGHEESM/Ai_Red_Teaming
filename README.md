@@ -110,7 +110,7 @@ The course is structured into **12 progressive modules**, each focusing on speci
 
 ### Module 11: AI Privacy
 - **Topics:** 22
-- **Status:** Structure Created
+- **Status:** 4% Complete (1/22 topics)
 
 ### Module 12: AI Defense
 - **Topics:** 22
@@ -198,9 +198,9 @@ Before starting this course, you should have:
 | 08 - AI Evasion Foundations | 13 | 0 | ⚪ Not Started |
 | 09 - First-Order Attacks | 24 | 0 | ⚪ Not Started |
 | 10 - Sparsity Attacks | 29 | 0 | ⚪ Not Started |
-| 11 - AI Privacy | 22 | 0 | ⚪ Not Started |
+| 11 - AI Privacy | 22 | 1 | 🟡 In Progress |
 | 12 - AI Defense | 22 | 0 | ⚪ Not Started |
-| **Total** | **242** | **54** | **22%** |
+| **Total** | **242** | **55** | **23%** |
 
 ## 🎓 Learning Objectives
 
