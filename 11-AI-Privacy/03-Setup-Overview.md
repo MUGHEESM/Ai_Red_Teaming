@@ -234,8 +234,6 @@ The history dictionary captures per-epoch metrics: training loss, validation los
 
 Now we quantify the overfitting gap:
 
-![Training curves figure](Images/335_Introduction_target_training.png)
-
 ```python
 train_acc, _, _ = evaluate_model(target_model, train_loader, DEVICE)
 test_acc, _, _ = evaluate_model(target_model, test_loader, DEVICE)
@@ -248,6 +246,25 @@ print(f"  Overfitting Gap:   {train_acc - test_acc:.4f}")
 plot_overfitting_gap(train_acc, test_acc,
                      save_path=os.path.join(FIGS_DIR, f"{FIG_PREFIX}overfitting_gap.png"))
 ```
+
+When training the target model, you will see output like:
+
+```text
+Target Model Performance:
+  Training Accuracy: 0.9012
+  Test Accuracy:     0.8456
+  Overfitting Gap:   0.0556
+```
+
+This 5.5% gap means the model correctly classifies 90% of training samples but only 85% of unseen samples. The model behaves differently on data it has seen versus data it has not. This behavioral difference, consistent across tens of thousands of samples, provides the statistical foundation for membership inference.
+
+Let's examine how this gap develops over time:
+
+![Training curves figure](Images/335_Introduction_target_training.png)
+
+Notice the divergence around epoch 20: training loss continues decreasing while validation loss starts climbing. Training accuracy reaches 90% while validation accuracy stagnates near 83%. This classic overfitting pattern shows the model memorizing training examples instead of learning generalizable patterns.
+
+![Overfitting gap bar chart](Images/335_Introduction_overfitting_gap.png)
 
 ## Model Architectures
 We use the `MLP` class from `htb_ai_library` for both target and shadow models. The key method for our attack is `predict_proba()`:
@@ -271,8 +288,6 @@ Target Model Performance:
 ```
 
 This 5.5% gap means the model correctly classifies 90% of training samples but only 85% of unseen samples. The model behaves differently on data it has seen versus data it has not. This behavioral difference, consistent across tens of thousands of samples, provides the statistical foundation for membership inference.
-
-![Overfitting gap bar chart](Images/335_Introduction_overfitting_gap.png)
 
 The next sections use these components to implement the attack: training shadow models to generate labeled membership data, building an attack classifier that learns membership patterns, and executing the attack against the target model.
 
