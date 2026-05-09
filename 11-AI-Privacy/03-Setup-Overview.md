@@ -262,9 +262,13 @@ Let's examine how this gap develops over time:
 
 Two line charts showing target model training over 100 epochs. Left panel: training loss decreases from 0.35 to 0.15 while validation loss increases from 0.35 to 0.72, indicating severe overfitting. Right panel: training accuracy rises from 85% to 94% while validation accuracy declines from 85% to 82%.
 
+![Training curves figure](Images/335_Introduction_target_training.png)
+
 Notice the divergence around epoch 20: training loss continues decreasing while validation loss starts climbing. Training accuracy reaches 90% while validation accuracy stagnates near 83%. This classic overfitting pattern shows the model memorizing training examples instead of learning generalizable patterns.
 
 Bar chart comparing model accuracy on training data versus test data. Training data (members) achieves 93.6% accuracy shown in green; test data (non-members) achieves 82.5% accuracy shown in red. An arrow highlights the 11.1% gap, illustrating the root cause of membership inference vulnerability.
+
+![Overfitting gap bar chart](Images/335_Introduction_overfitting_gap.png)
 
 We can quantify this gap directly: 90.2% accuracy on training data (members) versus 83.2% on test data (non-members). This 7.1% difference represents the vulnerability our attack will exploit. The model treats members and non-members measurably differently.
 
